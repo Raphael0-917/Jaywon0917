@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jaewon Lee — Mechanical Engineering undergraduate at Coventry University. Research interests in robotic decision-making, reliable failure recovery, and learning-based trajectory correction.">
+  <meta name="theme-color" content="#142c43">
+  <meta name="author" content="Jaewon Lee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaewon Lee | Robotics & Mechanical Engineering">
+  <meta property="og:description" content="Exploring how robots can recover efficiently and decide when their predictions can be trusted.">
+  <meta property="og:url" content="https://raphael0-917.github.io/jw091709.github.io/">
+  <title>Jaewon Lee | Robotics & Mechanical Engineering</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Jaewon Lee — home"><span class="monogram" aria-hidden="true">JL<span>.</span></span><span class="brand-name">JAEWON LEE</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#documents">Documents</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero container" id="top" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="small-line" aria-hidden="true"></span> MECHANICAL ENGINEERING · ROBOTICS</p>
+      <div class="profile-row">
+        <div class="profile-portrait">
+          <img id="profile-image" src="assets/profile.png" width="104" height="104" alt="Profile image for Jaewon Lee">
+          <button class="profile-edit js-only" type="button" data-open-profile aria-haspopup="dialog" aria-controls="profile-dialog" title="Edit profile photo — local preview">
+            <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="m4 16-1 5 5-1L20 8l-4-4L4 16ZM14 6l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Edit profile
+          </button>
+        </div>
+        <div class="profile-heading">
+          <h1 id="hero-title">Jaewon Lee<span class="title-dot">.</span></h1>
+          <p class="hero-subtitle">Mechanical Engineering undergraduate<br><strong>Coventry University</strong><br class="profile-break"> <span class="education-divider">·</span> Expected graduation 2026</p>
+        </div>
+      </div>
+      <p class="local-preview-note" id="local-preview-note" hidden>Photo preview · this browser only <button type="button" id="clear-photo-preview">Show published photo</button></p>
+      <p class="hero-intro">I am interested in how robots can recover from failure <em>efficiently</em> — and how they should decide when their predictions can be trusted.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="documents/cover-letter.pdf" target="_blank" rel="noopener" aria-label="View cover letter PDF (opens in a new tab)">View cover letter <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="documents/group-project.pdf" target="_blank" rel="noopener" aria-label="View group project PDF (opens in a new tab)">Group project <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-status"><span class="status-dot" aria-hidden="true"></span> Final Year Project in progress <span class="status-divider" aria-hidden="true">/</span> September 2026</div>
+    </div>
+    <figure class="trajectory-figure">
+      <div class="figure-heading"><span class="eyebrow">CURRENT EXPLORATION</span><span class="figure-index">01 / XYZ</span></div>
+      <svg class="trajectory-svg" viewBox="0 0 450 330" role="img" aria-labelledby="trajectory-title trajectory-desc">
+        <title id="trajectory-title">A conceptual illustration of XYZ trajectory correction</title>
+        <desc id="trajectory-desc">A reference path, a displaced path, and an illustrative correction are shown above a coordinate grid. This drawing is not an experimental result.</desc>
+        <defs>
+          <marker id="small-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#8e9ca6" stroke-width="1.4"/></marker>
+          <marker id="correction-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#15766d" stroke-width="1.6"/></marker>
+        </defs>
+        <g stroke="#dce3e3" stroke-width="1" fill="none">
+          <path d="M50 252L230 309L407 218L227 162Z"/>
+          <path d="M80 237L260 294M110 222L290 279M140 207L320 264M170 192L350 249M200 177L380 234"/>
+          <path d="M80 262L257 172M110 271L287 181M140 281L317 191M170 290L347 200M200 300L377 210"/>
+        </g>
+        <g stroke="#9ba8af" stroke-width="1.25" fill="none" marker-end="url(#small-arrow)"><path d="M59 251L231 305"/><path d="M59 251L212 172"/><path d="M59 251V63"/></g>
+        <g fill="#798993" font-size="12" font-family="monospace"><text x="237" y="310">X</text><text x="218" y="174">Y</text><text x="54" y="53">Z</text></g>
+        <path d="M86 237 C117 215 136 168 172 153 S241 170 271 131 S323 78 375 87" fill="none" stroke="#263e54" stroke-width="3" stroke-linecap="round"/>
+        <path d="M86 237 C116 217 137 190 175 193 S231 220 277 184 S338 140 382 148" fill="none" stroke="#b3803e" stroke-width="2.5" stroke-dasharray="5 7" stroke-linecap="round"/>
+        <path d="M213 203 C231 199 246 168 259 146" fill="none" stroke="#15766d" stroke-width="2.5" marker-end="url(#correction-arrow)"/>
+        <path d="M277 184 C295 165 322 134 340 94" fill="none" stroke="#15766d" stroke-width="2.5" marker-end="url(#correction-arrow)"/>
+        <circle cx="86" cy="237" r="5.5" fill="#263e54"/><circle cx="375" cy="87" r="5" fill="#f5f6f2" stroke="#263e54" stroke-width="2"/>
+        <circle cx="213" cy="203" r="4.5" fill="#b3803e"/><circle cx="277" cy="184" r="4.5" fill="#b3803e"/>
+        <rect x="116" y="91" width="102" height="33" rx="6" fill="#ffffff" stroke="#dbe4e3"/>
+        <text x="132" y="112" fill="#15766d" font-family="monospace" font-size="13">Δx · Δy · Δz</text>
+        <path d="M211 125L239 169" stroke="#b7c9c4" stroke-width="1" stroke-dasharray="3 4"/>
+        <text x="321" y="66" fill="#637482" font-family="monospace" font-size="11">REFERENCE</text>
+      </svg>
+      <div class="figure-legend"><span><i class="legend-stroke reference"></i>Reference</span><span><i class="legend-stroke perturbed"></i>Perturbed</span><span><i class="legend-stroke corrected"></i>Correction</span></div>
+      <figcaption>Concept illustration only — not experimental results.</figcaption>
+    </figure>
+  </section>
+
+  <section id="documents" class="documents-quick container" aria-labelledby="documents-title">
+    <div class="quick-section-heading">
+      <div><p class="eyebrow">A CLOSER LOOK</p><h2 id="documents-title">Selected documents</h2></div>
+      <p class="section-note">Open either PDF directly. No sign-in needed.</p>
+    </div>
+    <div class="quick-document-grid">
+      <article class="quick-document cover-document">
+        <a class="document-main" href="documents/cover-letter.pdf" target="_blank" rel="noopener" aria-label="Open cover letter, PhD research enquiry, PDF, 1 page (new tab)">
+          <div class="document-art letter-art" aria-hidden="true"><img src="assets/letter-preview.png" width="417" height="590" alt=""><span class="document-paper-label">RESEARCH ENQUIRY</span></div>
+          <div class="document-copy"><span class="card-label">01 / PERSONAL STATEMENT</span><h3>Cover Letter<span class="document-arrow" aria-hidden="true">↗</span></h3><p>My background, research motivation, and the questions I hope to explore in doctoral study.</p><span class="document-open">Read my letter <span aria-hidden="true">→</span></span></div>
+        </a>
+        <div class="document-foot"><span class="document-meta">PDF <span>·</span> 1 page <span>·</span> English</span><a href="documents/cover-letter.pdf" download="Jaewon_Lee_Research_Enquiry.pdf" aria-label="Download cover letter PDF">Download <span aria-hidden="true">↓</span></a></div>
+      </article>
+      <article class="quick-document group-document">
+        <a class="document-main" href="documents/group-project.pdf" target="_blank" rel="noopener" aria-label="Open group project report, drone-based infrared solar-panel inspection, PDF, 42 pages (new tab)">
+          <div class="document-art drone-art" aria-hidden="true"><img src="assets/drone-prototype.jpg" width="750" height="495" alt=""><span class="document-photo-label">TEAM PROTOTYPE</span></div>
+          <div class="document-copy"><span class="card-label">02 / TEAM PROJECT REPORT</span><h3>Group Project<span class="document-arrow" aria-hidden="true">↗</span></h3><p>Drone-based infrared solar-panel inspection. Design, hardware, sensing, and system integration.</p><span class="document-open">View the report <span aria-hidden="true">→</span></span></div>
+        </a>
+        <div class="document-foot"><span class="document-meta">PDF <span>·</span> 42 pages <span>·</span> English</span><a href="documents/group-project.pdf" download="Jaewon_Lee_Team_Drone_Project.pdf" aria-label="Download group project report PDF">Download <span aria-hidden="true">↓</span></a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="research" class="research-section section-block" aria-labelledby="research-title">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">01 / RESEARCH DIRECTION</p><span class="section-note">A question that connects my work</span></div>
+      <div class="research-lead"><h2 id="research-title">How much recovery<br>is <em>enough?</em></h2><div><p>Recognising a risk of failure is not the same as knowing which recovery action is sufficient. A small correction may allow a task to continue without a more resource-intensive intervention.</p><p>I hope to study how a robot can select the least costly recovery option that meets a required success threshold — and how trustworthy the predictions behind that decision really are.</p></div></div>
+      <div class="interest-grid">
+        <article class="interest-card"><span class="card-label primary-label">PRIMARY INTEREST</span><h3>Decision-making<br>under uncertainty</h3><p>Choosing an appropriate recovery action while considering the required likelihood of success and the cost of intervention.</p><span class="card-question">What should the robot do?</span></article>
+        <article class="interest-card"><span class="card-label">RELATED INTEREST</span><h3>Uncertainty<br>quantification</h3><p>Learning how to evaluate the reliability of predicted recovery probabilities before using them to guide action.</p><span class="card-question">How much should it trust the prediction?</span></article>
+        <article class="interest-card"><span class="card-label">APPLICATION &amp; VALIDATION</span><h3>Robotic systems<br>&amp; manipulation</h3><p>Connecting software decisions to physical systems, and eventually testing their benefits and limitations on real robots.</p><span class="card-question">Does it work in a real system?</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container section-block" aria-labelledby="projects-title">
+    <div class="section-heading"><p class="eyebrow">02 / SELECTED WORK</p><span class="section-note">From physical systems to recovery decisions</span></div>
+    <h2 id="projects-title" class="section-title">Research &amp; projects</h2>
+    <article class="project current-project">
+      <div class="project-copy"><div class="project-meta"><span class="status-tag">IN PROGRESS</span><span>Final Year Project · 2026</span></div><h3>Dataset-driven XYZ<br>trajectory correction</h3><p>I am developing a learning-based approach to correct trajectories with artificially introduced XYZ position errors, using offline data without requiring a physical robot environment.</p><p>The immediate question is how to make these corrections efficiently. I see this as a foundation for studying the broader problem of selecting between recovery strategies.</p><div class="project-note"><strong>Current status</strong><span>Data preparation, algorithm design, and evaluation are being refined. No final results are reported yet.</span></div><div class="tags"><span>Offline trajectory data</span><span>Synthetic perturbations</span><span>XYZ correction</span></div></div>
+      <div class="method-panel"><p class="eyebrow">CURRENT RESEARCH WORKFLOW</p><ol class="method-steps"><li><span class="step-no">01</span><div><h4>Reference trajectory</h4><p>Start with offline trajectory data.</p></div></li><li><span class="step-no">02</span><div><h4>Introduce position errors</h4><p>Create controlled XYZ deviations.</p></div></li><li><span class="step-no">03</span><div><h4>Learn a correction</h4><p>Investigate efficient coordinate adjustments.</p></div></li><li><span class="step-no">04</span><div><h4>Evaluate &amp; revise</h4><p>Refine the data, method, and evaluation.</p></div></li></ol><p class="method-caption">Project scope, not a validated performance claim.</p></div>
+    </article>
+
+    <article class="project drone-project">
+      <figure class="project-photo"><img src="assets/drone-prototype.jpg" alt="Team-built inspection drone prototype with a 3D-printed frame, motors, wiring, and mounted sensor electronics" width="750" height="495" loading="lazy"><figcaption>Team prototype · photograph from the group project report, p. 25.</figcaption><div class="hardware-strip"><span>AMG8833</span><span>Arduino UNO</span><span>HM-10 BLE</span><span>3D-printed frame</span></div></figure>
+      <div class="project-copy"><div class="project-meta"><span class="status-tag neutral">TEAM PROJECT</span><span>Mechanical Product Innovation · 2026</span></div><h3>Drone-based infrared<br>solar-panel inspection</h3><p>A prototype combining a drone carrier, infrared sensing, and embedded comparison logic to flag abnormal thermal behaviour against reference readings from healthy panels.</p><p><strong>My contribution.</strong> I focused on design and hardware integration, including motors and ESCs, wiring, sensor mounting, and testing. I also contributed to sensor-data collection, processing, and detection software, adjusting the hardware in response to program behaviour and sensor readings.</p><a class="project-pdf-link text-link" href="documents/group-project.pdf" target="_blank" rel="noopener">Open full team report <span class="file-type">PDF</span> <span aria-hidden="true">↗</span></a><details class="project-details"><summary>System method &amp; reported test outcome <span aria-hidden="true">+</span></summary><div><p>The inspection subsystem reads thermal data, calculates temperature features, compares them with calibration references stored in EEPROM, and sends results through Bluetooth. Its detection method is reference- and threshold-based, not a trained AI classifier.</p><p>The group report records <strong>15 correct classifications out of 16 preliminary tests (93.75%)</strong>. This small test is not evidence of general field performance or autonomous flight capability.</p><p class="source-note">Source: <cite>MPI Group 5 Drone Report (Revised 6)</cite>, Sections 4.3 and 7, pp. 19 and 40–41. Reported team result; not an individual performance claim.</p></div></details></div>
+    </article>
+  </section>
+
+  <section id="approach" class="approach-section section-block" aria-labelledby="approach-title">
+    <div class="container"><div class="section-heading"><p class="eyebrow">03 / HOW I APPROACH RESEARCH</p><span class="section-note">Problem first. Shared understanding.</span></div>
+      <div class="approach-grid"><div><h2 id="approach-title">Start with<br>the right question.</h2><p class="approach-intro">“What exactly are we trying to solve?”</p><p>Working across hardware and software taught me that a clear problem statement and a shared understanding should come before choosing a solution.</p></div><div class="approach-items"><article><span>01</span><div><h3>Communicate observations clearly</h3><p>Share what I observe and the reasoning behind it, while listening carefully to colleagues working on other parts of the system.</p></div></article><article><span>02</span><div><h3>Take responsibility for the whole connection</h3><p>Understand how my work affects the team’s work, rather than treating hardware, sensing, and software as isolated tasks.</p></div></article><article><span>03</span><div><h3>Revise the method, retain the question</h3><p>Work on a tractable problem, acknowledge what has not yet been demonstrated, and use evidence to guide the next step.</p></div></article></div></div>
+    </div>
+  </section>
+
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">Let’s discuss the question.</h2><p>Research opportunities, project discussions, and collaboration.</p></div><div class="contact-links"><a class="email-link" href="mailto:jason88278827@gmail.com">jason88278827@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-secondary"><a href="https://github.com/Raphael0-917" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><button type="button" id="copy-email" data-email="jason88278827@gmail.com">Copy email</button><span id="copy-status" role="status" aria-live="polite"></span></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p>© 2026 Jaewon Lee</p><p>Mechanical Engineering · Coventry University</p><div class="footer-tools"><button class="footer-edit js-only" type="button" data-open-profile aria-haspopup="dialog" aria-controls="profile-dialog">Edit profile</button><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></div></footer>
+
+<!-- This is a local photo editor, not an authenticated CMS. It never uploads files. -->
+<dialog id="profile-dialog" class="profile-dialog" aria-labelledby="profile-dialog-title" aria-describedby="profile-dialog-description">
+  <div class="editor-header"><div><p class="eyebrow">PROFILE PHOTO</p><h2 id="profile-dialog-title">Make it yours.</h2></div><button class="dialog-close" id="close-profile" type="button" aria-label="Close profile photo editor">×</button></div>
+  <p id="profile-dialog-description" class="editor-intro">Choose a small portrait for your profile. Crop it here, then download the image to update your site.</p>
+  <div class="local-only-notice"><span class="notice-dot" aria-hidden="true"></span><p><strong>Local preview only.</strong> Nothing is uploaded. Changes here do not update the public website.</p></div>
+  <div class="editor-grid">
+    <div class="editor-crop"><canvas id="photo-canvas" width="600" height="600" aria-label="Square crop preview of the selected profile photo"></canvas><p>Square crop · displayed at 104 × 104 px</p></div>
+    <div class="editor-controls">
+      <label class="upload-label" for="photo-file"><span>Choose a photo</span><span aria-hidden="true">↑</span></label>
+      <input id="photo-file" class="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="file-help">
+      <p id="file-help" class="file-help">JPG, PNG, or WebP · up to 10 MB<br>No photo is required to use the site.</p>
+      <label class="slider-label" for="photo-zoom">Zoom <output id="zoom-value" for="photo-zoom">1.00×</output></label>
+      <input id="photo-zoom" type="range" min="1" max="3" step="0.01" value="1" disabled>
+      <label class="slider-label" for="photo-x">Horizontal position</label>
+      <input id="photo-x" type="range" min="-100" max="100" step="1" value="0" disabled>
+      <label class="slider-label" for="photo-y">Vertical position</label>
+      <input id="photo-y" type="range" min="-100" max="100" step="1" value="0" disabled>
+      <button class="reset-crop" id="reset-crop" type="button" disabled>Reset crop</button>
+    </div>
+  </div>
+  <p id="photo-status" class="editor-status" role="status" aria-live="polite"></p>
+  <div class="editor-actions"><button id="apply-photo" class="button button-primary" type="button" disabled>Apply to this browser</button><button id="download-photo" class="button button-outline" type="button" disabled>Download profile.png <span aria-hidden="true">↓</span></button></div>
+  <div class="publish-instructions"><strong>To make your photo visible to everyone</strong><p>Download <code>profile.png</code>, replace <code>assets/profile.png</code> in your GitHub repository, and commit the change. GitHub Pages publishes the updated file. Only a repository editor can publish it.</p></div>
+</dialog>
+<noscript><p class="no-script-note container">Document links work without JavaScript. To change the portrait, replace <code>assets/profile.png</code> in the website files.</p></noscript>
+
+</body>
+</html>
