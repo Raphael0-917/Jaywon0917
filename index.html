@@ -163,6 +163,17 @@
     .video-preview summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
     .video-frame{aspect-ratio:16/9;margin-top:14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--soft2)}
     .video-frame iframe{display:block;width:100%;height:100%;border:0}
+
+    /* Keep the implementation companion attached to the existing report card. */
+    #revector-code{scroll-margin-top:94px}
+    .code-companion{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+    .code-companion h4{font-family:Georgia,"Times New Roman",serif;font-size:22px;line-height:1.25;color:var(--navy);margin:0 0 10px}
+    .code-companion p{margin:0 0 12px}
+    .code-companion .code-meta{font-size:12px;font-weight:700;color:var(--green)}
+    .code-companion .card-actions{margin-top:14px}
+    .code-downloads{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:13px;font-size:12px;color:var(--muted)}
+    .code-downloads a{text-decoration:underline;text-underline-offset:3px}
+    .code-downloads a:hover{color:var(--navy)}
   </style>
 </head>
 <body>
@@ -238,12 +249,25 @@
             <p>AI-Driven XYZ Correction and Multi-Target Path Planning. My completed individual project combines learned target estimation, XYZ correction, and visitation-order evaluation, with numerical testing and MuJoCo UR5e execution.</p>
             <div class="meta">
               <span class="metric">Final report · 2026</span>
-              <span class="metric">52 pages</span>
+              <span class="metric">Report · 52 pages</span>
               <span class="metric">MuJoCo UR5e</span>
             </div>
             <div class="card-actions">
               <a class="btn primary" href="https://drive.google.com/file/d/1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c/view?usp=sharing" target="_blank" rel="noopener">Open final report ↗</a>
               <a class="btn download" href="https://drive.google.com/uc?export=download&amp;id=1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c">Download PDF ↓</a>
+            </div>
+            <div class="code-companion" id="revector-code" role="group" aria-labelledby="revector-code-heading">
+              <h4 id="revector-code-heading">Core implementation &amp; code</h4>
+              <p>A companion to the final report, linking the project flowcharts to the actual training, inference, MuJoCo and scaling-evaluation code.</p>
+              <div class="code-meta">72 pages · 101 code blocks · 1,965 source lines</div>
+              <div class="card-actions">
+                <a class="btn secondary" href="https://drive.google.com/file/d/1W_ZPU6jm3szvpgu7GlPQgfT42fTA3oZg/view?usp=sharing" target="_blank" rel="noopener">Open code PDF ↗</a>
+                <a class="btn primary" href="https://drive.google.com/file/d/1b1x5fBv8guf0Qlatpxl_xe3fR47AZuP_/view?usp=sharing" target="_blank" rel="noopener">Read report + code ↗</a>
+              </div>
+              <div class="code-downloads">
+                <a href="https://drive.google.com/uc?export=download&amp;id=1W_ZPU6jm3szvpgu7GlPQgfT42fTA3oZg">Download code ↓</a>
+                <a href="https://drive.google.com/uc?export=download&amp;id=1b1x5fBv8guf0Qlatpxl_xe3fR47AZuP_">Download combined · 124 pages ↓</a>
+              </div>
             </div>
           </article>
 
@@ -387,6 +411,7 @@
             <div class="card-actions">
               <a class="btn primary" href="https://drive.google.com/file/d/1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c/view?usp=sharing" target="_blank" rel="noopener">Read final report ↗</a>
               <a class="btn secondary" href="https://drive.google.com/file/d/1-6lQARYF6D7g7Dc0Ns4xFxft-crGvlyR/view?usp=sharing" target="_blank" rel="noopener">Watch presentation ↗</a>
+              <a class="btn download" href="https://drive.google.com/file/d/1W_ZPU6jm3szvpgu7GlPQgfT42fTA3oZg/view?usp=sharing" target="_blank" rel="noopener">Read implementation code ↗</a>
             </div>
           </article>
 
