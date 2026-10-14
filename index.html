@@ -154,6 +154,15 @@
       section{padding:40px 0}h2{font-size:32px}.doc-card,.panel,.quote,.project-card,.journey-panel,.phd-panel{padding:22px}
       .candidate-grid{grid-template-columns:1fr}.candidate-card.integration{grid-column:span 1}
     }
+
+    /* REVECTOR additions reuse the existing portfolio palette and components. */
+    #revector,#revector-report,#revector-video{scroll-margin-top:94px}
+    .project-card .evidence-note{font-size:12px;color:var(--muted);margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+    .video-preview{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+    .video-preview summary{cursor:pointer;color:var(--navy);font-size:13px;font-weight:750}
+    .video-preview summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+    .video-frame{aspect-ratio:16/9;margin-top:14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--soft2)}
+    .video-frame iframe{display:block;width:100%;height:100%;border:0}
   </style>
 </head>
 <body>
@@ -214,19 +223,61 @@
       <div class="shell">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Selected documents</div>
-            <h2>Read the work directly</h2>
+            <div class="section-kicker">Selected work</div>
+            <h2>Read and watch the work</h2>
           </div>
         </div>
 
         <div class="doc-grid">
+          <article class="doc-card" id="revector-report">
+            <div class="doc-top">
+              <div class="doc-icon" aria-hidden="true">↗</div>
+              <div class="doc-tag">Completed Individual Project</div>
+            </div>
+            <h3>REVECTOR — Final Year Report</h3>
+            <p>AI-Driven XYZ Correction and Multi-Target Path Planning. My completed individual project combines learned target estimation, XYZ correction, and visitation-order evaluation, with numerical testing and MuJoCo UR5e execution.</p>
+            <div class="meta">
+              <span class="metric">Final report · 2026</span>
+              <span class="metric">52 pages</span>
+              <span class="metric">MuJoCo UR5e</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn primary" href="https://drive.google.com/file/d/1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c/view?usp=sharing" target="_blank" rel="noopener">Open final report ↗</a>
+              <a class="btn download" href="https://drive.google.com/uc?export=download&amp;id=1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c">Download PDF ↓</a>
+            </div>
+          </article>
+
+          <article class="doc-card" id="revector-video">
+            <div class="doc-top">
+              <div class="doc-icon" aria-hidden="true">▶</div>
+              <div class="doc-tag">Project Presentation</div>
+            </div>
+            <h3>REVECTOR — Presentation &amp; Simulation</h3>
+            <p>A recorded presentation of my completed final-year project, featuring MuJoCo UR5e experiments and the evaluation setup. The final report provides the full methods, results, and limitations alongside the video.</p>
+            <div class="meta">
+              <span class="metric">6 min 42 sec</span>
+              <span class="metric">Recorded simulation</span>
+              <span class="metric">Project walkthrough</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn primary" href="https://drive.google.com/file/d/1-6lQARYF6D7g7Dc0Ns4xFxft-crGvlyR/view?usp=sharing" target="_blank" rel="noopener">Watch presentation ↗</a>
+              <a class="btn download" href="https://drive.google.com/uc?export=download&amp;id=1-6lQARYF6D7g7Dc0Ns4xFxft-crGvlyR">Download video ↓</a>
+            </div>
+            <details class="video-preview">
+              <summary>Play presentation on this page</summary>
+              <div class="video-frame">
+                <iframe src="https://drive.google.com/file/d/1-6lQARYF6D7g7Dc0Ns4xFxft-crGvlyR/preview" title="REVECTOR final-year project presentation by Jaewon Lee" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+              </div>
+            </details>
+          </article>
+
           <article class="doc-card">
             <div class="doc-top">
               <div class="doc-icon" aria-hidden="true">✦</div>
               <div class="doc-tag">PhD Research Enquiry</div>
             </div>
             <h3>Research motivation and future direction</h3>
-            <p>My current research enquiry explains how my interests moved from mechanical systems and sensor-based inspection toward robotic decision-making, failure recovery, and the reliability of predicted recovery outcomes. It also describes my ongoing FYP on offline XYZ trajectory correction and the broader research question I hope to pursue during doctoral study.</p>
+            <p>My research enquiry explains how my interests moved from mechanical systems and sensor-based inspection toward robotic decision-making, failure recovery, and the reliability of predicted recovery outcomes. It also records the early direction of my FYP on offline XYZ trajectory correction and the broader research question I hope to pursue during doctoral study.</p>
             <div class="meta">
               <span class="metric">RUNES Lab enquiry</span>
               <span class="metric">Decision-making</span>
@@ -271,7 +322,7 @@
         <div class="research-split">
           <article class="journey-panel">
             <h3>How my research interest developed</h3>
-            <p class="journey-intro">The question developed step by step through engineering, sensing, failure analysis, and my current FYP.</p>
+            <p class="journey-intro">The question developed step by step through engineering, sensing, failure analysis, and my completed FYP, REVECTOR.</p>
             <div class="journey" aria-label="Research interest flow chart">
               <div class="journey-step">
                 <div class="journey-dot">1</div>
@@ -287,7 +338,7 @@
               </div>
               <div class="journey-step">
                 <div class="journey-dot">4</div>
-                <div class="journey-copy"><strong>Current FYP: learn the correction first</strong><span>I am studying offline, learning-based XYZ trajectory correction as a tractable foundation for broader recovery decisions.</span></div>
+                <div class="journey-copy"><strong>Completed FYP: REVECTOR</strong><span>I developed and evaluated learned XYZ correction and multi-target path planning through numerical tests and MuJoCo UR5e simulation, establishing a foundation for broader recovery decisions.</span></div>
               </div>
               <div class="journey-step">
                 <div class="journey-dot">5</div>
@@ -317,21 +368,26 @@
         <div class="section-head">
           <div>
             <div class="section-kicker">Projects</div>
-            <h2>Current and previous work</h2>
+            <h2>Completed engineering and robotics work</h2>
           </div>
         </div>
 
         <div class="fyp">
-          <article class="project-card">
-            <div class="status"><span class="dot"></span> Current FYP · In progress</div>
-            <h3>Offline, Learning-Based XYZ Trajectory Correction</h3>
-            <p>My current FYP uses offline trajectory data with artificially introduced XYZ position errors to study efficient learning-based correction without requiring a physical robot environment. The project remains in progress, and the data, algorithm, and evaluation methods are still being refined.</p>
+          <article class="project-card" id="revector">
+            <div class="status" style="color:#526858"><span class="dot" style="background:#68816f;box-shadow:0 0 0 4px rgba(104,129,111,.13)"></span> Completed FYP · 2026</div>
+            <h3>REVECTOR: AI-Driven XYZ Correction and Multi-Target Path Planning</h3>
+            <p>I built an offline learning system that estimates uncertain targets, predicts XYZ correction vectors, and evaluates multi-target visitation orders. A 13-feature affine target estimator and alternative 59-input Ridge correctors were integrated with a simulated UR5e robot in MuJoCo.</p>
             <ul class="clean-list">
-              <li>Offline or synthetically perturbed trajectory data</li>
-              <li>XYZ position-error correction</li>
-              <li>Designed as a foundation for a broader recovery-decision problem</li>
-              <li>No final results claimed yet</li>
+              <li>94.79% numerical estimated-route goal success: 1,327/1,400 targets across 200 held-out scenes.</li>
+              <li>92.86% MuJoCo estimated-route goal success: 65/70 targets; 6/10 scenes completed every goal.</li>
+              <li>3.13% shorter mean simulated travel than nearest-target-first, at equal pooled goal success across the same 10 scenes.</li>
+              <li>Python · scikit-learn · MuJoCo UR5e; evaluated under a uniform 2% relative-position-error criterion.</li>
             </ul>
+            <p class="evidence-note">Final-model results: report §4.5, pp. 29–30. Simulation-only evidence using synthetic observations and failure states; not a claim of physical-robot reliability or energy savings.</p>
+            <div class="card-actions">
+              <a class="btn primary" href="https://drive.google.com/file/d/1toKzDVuJcZqDSpFnp3XmWRToAEwyve1c/view?usp=sharing" target="_blank" rel="noopener">Read final report ↗</a>
+              <a class="btn secondary" href="https://drive.google.com/file/d/1-6lQARYF6D7g7Dc0Ns4xFxft-crGvlyR/view?usp=sharing" target="_blank" rel="noopener">Watch presentation ↗</a>
+            </div>
           </article>
 
           <article class="project-card">
